@@ -29,7 +29,7 @@
 
     {% else %}
         <h3 class="text-center mt-5">Choisissez une carte à retourner</h3>
-        <p class="text-center mt-5">Partie commencé le <strong>{{ party.getDateStarted()|date("d/m/Y") }} à {{ party.getDateStarted()|date("H:m:s") }}</strong></p>
+        <p class="text-center mt-5">Partie commencée le <strong>{{ party.getDateStarted()|date("d/m/Y") }} à {{ party.getDateStarted()|date("H:m:s") }}</strong></p>
         <p class="text-center">Nombre d'essais : <strong><span id="nbtry">{{ party.getNbTry()}}</span></strong></p>
         <p class="text-center">Nombre de cartes : <strong><span id="nbcards">{{ party.getNbCards()}}</span></strong></p>
         <div class="row justify-content-center">

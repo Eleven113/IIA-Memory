@@ -7,7 +7,7 @@ var nbtry = $('#nbtry').text();
 for (i = 0; i < cards.length; i++){
     card = cards[i].split('x');
     if(card[1] == "1"){
-        $('#game').append('<div class="card reveal" id="'+i+'"><img class="h-100 mx-auto d-block" src="/memory/public/img/memory_img/'+card[0]+'.png" /></div>')
+        $('#game').append('<div class="card reveal" id="'+i+'"><img class="h-100 mx-auto d-block" src="../img/memory_img/'+card[0]+'.png" /></div>')
 
     }else{
         $('#game').append('<div class="card bg-dark not-reveal" id="'+i+'"><span class="d-block text-center w-100 h-100 h1">?</span></div>')
@@ -19,7 +19,7 @@ $('.not-reveal').click(function(){
     if(card_clicked_id != $(this).attr('id') && !freeze){
         $(this).addClass('reveal')
         $(this).removeClass('not-reveal')
-        $(this).html('<img class="h-100 mx-auto d-block" src="/memory/public/img/memory_img/'+cards[$(this).attr('id')][0]+'.png" />')
+        $(this).html('<img class="h-100 mx-auto d-block" src="../img/memory_img/'+cards[$(this).attr('id')][0]+'.png" />')
 
 
 
